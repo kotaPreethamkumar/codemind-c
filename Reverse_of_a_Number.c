@@ -1,13 +1,15 @@
 #include<stdio.h>
+#include<string.h>
 int main()
 {
-    int r,n,rev=0;
-    scanf("%d",&n);
-    while(n!=0)
-    {
-        r=n%10;
-        rev=rev*10+r;
-        n=n/10;
-    }
-    printf("%d",rev);
+char s[50];
+int length,n,i;
+scanf("%[^
+]s",s);
+length=strlen(s); 
+n=length-1;
+for(i=n;i>=0; i--)
+{
+printf("%c",s[i]);
+}
 }
